@@ -1,0 +1,37 @@
+# Microsemi Physical design constraints file
+
+# Version: 2022.1 2022.1.0.10
+
+# Design Name: tx_rx_esistream_top 
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFire , Die: MPF300T , Package: FCG1152 , Speed grade: -1 
+
+# Date generated: Wed Nov  9 10:23:48 2022 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_2/I_XCVR/LANE3 -fixed true -x 2460 -y 71
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_2/I_XCVR/LANE1 -fixed true -x 2460 -y 44
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_1/I_XCVR/LANE0 -fixed true -x 2460 -y 98
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_2/I_XCVR/LANE2 -fixed true -x 2461 -y 44
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_1/I_XCVR/LANE3 -fixed true -x 2460 -y 152
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_2/I_XCVR/LANE0 -fixed true -x 2460 -y 17
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_1/I_XCVR/LANE1 -fixed true -x 2460 -y 125
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_txrx_4lanes_32b_1/I_XCVR/LANE2 -fixed true -x 2461 -y 125
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_transmit_pll_2/PF_TX_PLL_C1_0/txpll_isnt_0 -fixed true -x 2466 -y 20
+set_location -inst_name gen_esistream_hdl.tx_rx_esistream_with_xcvr_1/tx_rx_xcvr_wrapper_1/i_transmit_pll/PF_TX_PLL_C0_0/txpll_isnt_0 -fixed true -x 2466 -y 101

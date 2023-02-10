@@ -1,0 +1,107 @@
+# Microsemi Physical design constraints file
+# Version: 2022.1 2022.1.0.10
+# Design Name: tx_rx_esistream_top 
+# Input Netlist Format: EDIF 
+# Family: PolarFire , Die: MPF300T , Package: FCG1152 , Speed grade: -1 
+# Date generated: Wed Feb  8 14:17:52 2023
+
+#
+# IO banks setting
+#
+set_iobank -bank_name Bank1 -vcci 1.80 
+set_iobank -bank_name Bank2 -vcci 1.20 
+set_iobank -bank_name Bank3 -vcci 2.50 
+set_iobank -bank_name Bank4 -vcci 1.80 
+set_iobank -bank_name Bank5 -vcci 2.50 
+set_iobank -bank_name Bank6 -vcci 1.80 
+set_iobank -bank_name Bank7 -vcci 1.20 
+
+#
+# I/O constraints
+#
+set_io -port_name ADC_CS_U -DIRECTION OUTPUT -pin_name Y11 -fixed true
+set_io -port_name ADC_MISO -DIRECTION INPUT -pin_name W10 -fixed true
+set_io -port_name ADC_MOSI -DIRECTION OUTPUT -pin_name Y10 -fixed true
+set_io -port_name ADC_SCLK -DIRECTION OUTPUT -pin_name U10 -fixed true
+set_io -port_name C2M_LED1 -DIRECTION OUTPUT -pin_name T7 -fixed true
+set_io -port_name C2M_LED2 -DIRECTION OUTPUT -pin_name U7 -fixed true
+set_io -port_name C2M_LED3 -DIRECTION OUTPUT -pin_name V3 -fixed true
+set_io -port_name C2M_LED4 -DIRECTION OUTPUT -pin_name V4 -fixed true
+set_io -port_name CLK_50MHZ_I -DIRECTION INPUT -pin_name AL26 -fixed true
+set_io -port_name CLK_SEL -DIRECTION OUTPUT -pin_name AB7 -fixed true
+set_io -port_name CSN -DIRECTION OUTPUT -pin_name V8 -fixed true
+set_io -port_name CSN_PLL -DIRECTION OUTPUT -pin_name W5 -fixed true
+set_io -port_name DIP1 -DIRECTION INPUT -pin_name AH22 -fixed true
+set_io -port_name DIP2 -DIRECTION INPUT -pin_name AJ21 -fixed true
+set_io -port_name DIP3 -DIRECTION INPUT -pin_name AG21 -fixed true
+set_io -port_name FPGA_REF_CLK -DIRECTION OUTPUT -pin_name T9 -fixed true
+set_io -port_name FTDI_UART1_RXD -DIRECTION OUTPUT -pin_name AL23 -fixed true
+set_io -port_name FTDI_UART1_TXD -DIRECTION INPUT -pin_name AL24 -fixed true
+set_io -port_name HMC1031_D0 -DIRECTION OUTPUT -pin_name Y13 -fixed true
+set_io -port_name HMC1031_D1 -DIRECTION OUTPUT -pin_name Y12 -fixed true
+set_io -port_name LED\[0\] -DIRECTION OUTPUT -pin_name G17 -fixed true
+set_io -port_name LED\[1\] -DIRECTION OUTPUT -pin_name K23 -fixed true
+set_io -port_name LED\[2\] -DIRECTION OUTPUT -pin_name L23 -fixed true
+set_io -port_name LED\[3\] -DIRECTION OUTPUT -pin_name B25 -fixed true
+set_io -port_name M2C_CFG1 -DIRECTION INPUT -pin_name R3 -fixed true
+set_io -port_name M2C_CFG2 -DIRECTION INPUT -pin_name R2 -fixed true
+set_io -port_name M2C_CFG3 -DIRECTION INPUT -pin_name AA3 -fixed true
+set_io -port_name M2C_CFG4 -DIRECTION INPUT -pin_name AA2 -fixed true
+set_io -port_name MISO -DIRECTION INPUT -pin_name W14 -fixed true
+set_io -port_name MOSI -DIRECTION OUTPUT -pin_name V7 -fixed true
+set_io -port_name PLL_MUXOUT -DIRECTION INPUT -pin_name AA4 -fixed true
+set_io -port_name REF_SEL -DIRECTION OUTPUT -pin_name AB10 -fixed true
+set_io -port_name REF_SEL_EXT -DIRECTION OUTPUT -pin_name AB11 -fixed true
+set_io -port_name RSTN -DIRECTION OUTPUT -pin_name V11 -fixed true
+set_io -port_name SCLK -DIRECTION OUTPUT -pin_name U12 -fixed true
+set_io -port_name SPARE_1 -DIRECTION INPUT -pin_name Y5 -fixed true
+set_io -port_name SPARE_2 -DIRECTION INPUT -pin_name Y6 -fixed true
+set_io -port_name SPARE_3 -DIRECTION INPUT -pin_name AA7 -fixed true
+set_io -port_name SPARE_4 -DIRECTION INPUT -pin_name A17 -fixed true
+set_io -port_name SPARE_5 -DIRECTION INPUT -pin_name AA5 -fixed true
+set_io -port_name SPARE_6 -DIRECTION INPUT -pin_name W11 -fixed true
+set_io -port_name SPARE_7 -DIRECTION INPUT -pin_name V14 -fixed true
+set_io -port_name SPARE_8 -DIRECTION INPUT -pin_name V12 -fixed true
+set_io -port_name SPARE_9 -DIRECTION INPUT -pin_name U11 -fixed true
+set_io -port_name SW1 -DIRECTION INPUT -pin_name AK21 -fixed true
+set_io -port_name SW2 -DIRECTION INPUT -pin_name AM27 -fixed true
+set_io -port_name SYNCO_N -DIRECTION INPUT -pin_name U1 -fixed true
+set_io -port_name SYNCO_P -DIRECTION INPUT -pin_name U2 -fixed true
+set_io -port_name SYNCO_SEL -DIRECTION OUTPUT -pin_name AB6 -fixed true
+set_io -port_name SYNCTRIG_N_DUT -DIRECTION OUTPUT -io_std LVDS18G -pin_name W9 -fixed true
+set_io -port_name SYNCTRIG_P_DUT -DIRECTION OUTPUT -io_std LVDS18G -pin_name V9 -fixed true
+set_io -port_name SYNC_SEL -DIRECTION OUTPUT -pin_name W6 -fixed true
+set_io -port_name rxn\[0\] -DIRECTION INPUT -pin_name M30
+set_io -port_name rxn\[1\] -DIRECTION INPUT -pin_name P30
+set_io -port_name rxn\[2\] -DIRECTION INPUT -pin_name R32
+set_io -port_name rxn\[3\] -DIRECTION INPUT -pin_name T30
+set_io -port_name rxn\[4\] -DIRECTION INPUT -pin_name G32
+set_io -port_name rxn\[5\] -DIRECTION INPUT -pin_name J32
+set_io -port_name rxn\[6\] -DIRECTION INPUT -pin_name K30
+set_io -port_name rxn\[7\] -DIRECTION INPUT -pin_name L32
+set_io -port_name rxp\[0\] -DIRECTION INPUT -pin_name M29
+set_io -port_name rxp\[1\] -DIRECTION INPUT -pin_name P29
+set_io -port_name rxp\[2\] -DIRECTION INPUT -pin_name R31
+set_io -port_name rxp\[3\] -DIRECTION INPUT -pin_name T29
+set_io -port_name rxp\[4\] -DIRECTION INPUT -pin_name G31
+set_io -port_name rxp\[5\] -DIRECTION INPUT -pin_name J31
+set_io -port_name rxp\[6\] -DIRECTION INPUT -pin_name K29
+set_io -port_name rxp\[7\] -DIRECTION INPUT -pin_name L31
+set_io -port_name sso_n -DIRECTION INPUT -pin_name N28
+set_io -port_name sso_p -DIRECTION INPUT -pin_name N27
+set_io -port_name txn\[0\] -DIRECTION OUTPUT -pin_name N32
+set_io -port_name txn\[1\] -DIRECTION OUTPUT -pin_name P34
+set_io -port_name txn\[2\] -DIRECTION OUTPUT -pin_name T34
+set_io -port_name txn\[3\] -DIRECTION OUTPUT -pin_name U32
+set_io -port_name txn\[4\] -DIRECTION OUTPUT -pin_name F34
+set_io -port_name txn\[5\] -DIRECTION OUTPUT -pin_name H34
+set_io -port_name txn\[6\] -DIRECTION OUTPUT -pin_name K34
+set_io -port_name txn\[7\] -DIRECTION OUTPUT -pin_name M34
+set_io -port_name txp\[0\] -DIRECTION OUTPUT -pin_name N31
+set_io -port_name txp\[1\] -DIRECTION OUTPUT -pin_name P33
+set_io -port_name txp\[2\] -DIRECTION OUTPUT -pin_name T33
+set_io -port_name txp\[3\] -DIRECTION OUTPUT -pin_name U31
+set_io -port_name txp\[4\] -DIRECTION OUTPUT -pin_name F33
+set_io -port_name txp\[5\] -DIRECTION OUTPUT -pin_name H33
+set_io -port_name txp\[6\] -DIRECTION OUTPUT -pin_name K33
+set_io -port_name txp\[7\] -DIRECTION OUTPUT -pin_name M33
